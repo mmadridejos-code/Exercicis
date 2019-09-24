@@ -8,7 +8,7 @@ public class Persona extends Thread{
     @Override
     public void run() {
         System.out.println("\n"+nom+
-        " está comptant... dins el thread "+getName());
+        " està comptant... dins el thread "+getName());
         for(int i=0;i<10;i++){
             System.out.println(nom +" "+i);
         }

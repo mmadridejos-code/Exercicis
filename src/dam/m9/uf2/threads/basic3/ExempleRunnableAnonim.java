@@ -18,7 +18,7 @@ public class ExempleRunnableAnonim {
 
 
         //una altra manera d'escriure, per reciclar el runnable
-        //classe anònima
+        //classe interna
         Runnable runa=new Runnable(){
 
             @Override

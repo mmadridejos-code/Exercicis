@@ -11,6 +11,3 @@ public class ExemplePersonaThread {
     }
 }
 
-// System.out.println("\nDesprés de t1.start()");
-//System.out.println("\nDesprés de t2.start()");
-//System.out.println("\nDesprés de t3.start()");

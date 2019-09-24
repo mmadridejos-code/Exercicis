@@ -14,9 +14,11 @@ public class ExemplePersonaRunnable {
 
 class Persona implements Runnable {
     private String nom;
+
     public Persona(String s) {
         nom = s;
     }
+
     @Override
     public void run() {
         System.out.println("\n" + nom +

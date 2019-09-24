@@ -11,6 +11,7 @@ public class ExempleLambda {
 
         Thread t1 = new Thread(runa);
         Thread t2 = new Thread(runa);
+
         Thread t3 = new Thread(() -> {
             System.out.println("\n" + "està comptant... en el thread " + Thread.currentThread().getName());
             for (int i = 0; i < 10; i++) {
