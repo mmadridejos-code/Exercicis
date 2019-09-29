@@ -16,7 +16,9 @@ public class ProvaPersones {
         llista.add(new Persona("Angeles",46,"Barcelona"));
 
 
-        //buscar persones amb característiques
+        //buscar persones amb diferents característiques
+        //Per cada característica hem d'escriure un mètode amb paràmetres diferents
+        //No és una bona solució.
         System.out.println("Majors de 45");
         printMajorsDe(llista,45);
         System.out.println("Entre 45 i 50");
