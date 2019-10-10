@@ -33,5 +33,17 @@ public class BitWiseExamples {
         // a=a&b
         a &= b;
         System.out.println("a= " + a);
+
+        a=5;
+        a=a<<2;
+        System.out.println("a<<2="+a); //20, multiplicar per 2 x 2
+
+        a=-8;
+        a=a>>1;
+        System.out.println("a>>1="+a); //-4, dividir per 2, mantenint el signe, si era negatiu, s'afegeix 1, si era positiu, s'afegeix 0
+
+        a=-8;
+        a=a>>>1; //unsigned shift a la dreta, afegint 0, encara que fos negatiu
+        System.out.println("a>>>1="+a); //2147483644 ==> 0111 1111 1111 1111 1111 1111 1111 1100
     }
 }
