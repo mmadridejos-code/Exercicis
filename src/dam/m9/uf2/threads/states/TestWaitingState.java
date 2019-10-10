@@ -22,6 +22,6 @@ public class TestWaitingState {
             Thread.sleep(1000);
         }catch(InterruptedException e){}
         //t1 is WAITING
-        System.out.println("t1 "+TestWaitingState.t1.getState());
+        System.out.println("t1 "+t1.getState());
     }
 }
