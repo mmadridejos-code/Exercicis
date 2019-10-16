@@ -1,8 +1,8 @@
 package dam.m9.uf2.threads.raceConditions;
 
 public class CounterSync {
-    // volatile funciona per tipus primitius
-    //sempre i quan només acccessos de lectura
+
+    
     //private volatile int c;
     private int c;
 //    public synchronized void increment() {
