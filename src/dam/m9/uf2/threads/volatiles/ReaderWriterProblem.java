@@ -1,11 +1,14 @@
 package dam.m9.uf2.threads.volatiles;
 
 public class ReaderWriterProblem {
-    private static volatile int c;
+    //si la variable no és volatile, al thread que fa de reader no pot veure
+    //les últimes actualizacions del writer
+    //si l'atribut c és volatile, tots 2 threads veuen l'últim valor actualitzat
+    private static int c;
 
     public static void main (String[] args) {
 
-        Thread thread1 = new Thread(() -> {
+        Thread reader = new Thread(() -> {
             int temp = 0;
             while (true) {
                 if (temp != c) {
@@ -15,7 +18,7 @@ public class ReaderWriterProblem {
             }
         });
 
-        Thread thread2 = new Thread(() -> {
+        Thread writer = new Thread(() -> {
             for (int i = 0; i < 5; i++) {
                 c++;
                 System.out.println("writer: changed value to = " + c);
@@ -36,7 +39,7 @@ public class ReaderWriterProblem {
             System.exit(0);
         });
 
-        thread1.start();
-        thread2.start();
+        reader.start();
+        writer.start();
     }
 }
