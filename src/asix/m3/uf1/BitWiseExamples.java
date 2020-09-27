@@ -1,4 +1,4 @@
-package aisx.m3.uf1;
+package asix.m3.uf1;
 
 public class BitWiseExamples {
     public static void main(String[] args) {

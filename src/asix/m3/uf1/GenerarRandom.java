@@ -1,6 +1,6 @@
 
 
-package aisx.m3.uf1;
+package asix.m3.uf1;
 
 /**
  * Exemples d'ús de la funció Math.random()
