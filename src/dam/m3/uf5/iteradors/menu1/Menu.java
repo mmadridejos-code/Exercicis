@@ -31,7 +31,13 @@ public class Menu implements Iterable<Plat>{
         m.afegirPlat(new Plat("orada al forn",3.80,false,true,true));
         m.afegirPlat(new Plat("pizza carbassó",2.5,true,false,false));
 
-        /* bucle for-each*/
+        // Iterar SENSE bucle for-each
+        Iterator<Plat> it=m.iterator();
+        while(it.hasNext()){
+            System.out.println(it.next());
+        }
+
+        /* Iterar AMB bucle for-each*/
         for(Plat p: m){
             System.out.println(p);
         }
