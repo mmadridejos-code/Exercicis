@@ -6,7 +6,7 @@ import java.util.*;
  * Per N = 10000, aproximadament HashMap triga 6 i ArrayList 70, LinkedList, 107
  * Per N= 100000, aproximadament HashMap triga 25, HashSet 19, ArrayList 3583, LinkedList 9679
  *
- * @version 26/02/2020
+ * @version 14/10/2020
  * @author Montse
  */
 public class ComparativaCollections {
