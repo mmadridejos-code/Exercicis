@@ -24,7 +24,8 @@ class ThreadPilota implements Runnable {
                 Thread.sleep(4);
             } catch (Exception e) {
             }
-            panel.paint(panel.getGraphics());
+            panel.repaint();
+
         }
     }
 }
