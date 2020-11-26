@@ -14,9 +14,9 @@ public class TestCallableDau {
 
         ExecutorService ex = Executors.newFixedThreadPool(3);
 
-        Future<Integer> f1 = ex.submit(new CallableDau(d1));
-        Future<Integer> f2 = ex.submit(new CallableDau(d2));
-        Future<Integer> f3 = ex.submit(new CallableDau(d3));
+        Future<Integer> f1 = ex.submit(d1);
+        Future<Integer> f2 = ex.submit(d2);
+        Future<Integer> f3 = ex.submit(d3);
 
         int i1, i2, i3;
         try {
