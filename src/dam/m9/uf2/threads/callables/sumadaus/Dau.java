@@ -6,7 +6,7 @@ public class Dau implements Callable<Integer> {
     private int tirada;
 
     public int llençarDau() {
-        tirada = (int) (Math.random() * 5 + 1);
+        tirada = (int) (Math.random() * 6 + 1);
         System.out.println("Tirada " + Thread.currentThread().getName() + " : " + tirada);
         //  tirada=new Random().ints(1,5).findFirst().getAsInt();
         return tirada;
