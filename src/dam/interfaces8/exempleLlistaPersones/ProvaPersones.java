@@ -1,4 +1,4 @@
-package dam.m9.uf2.interfaces8.exempleLlistaPersones;
+package dam.interfaces8.exempleLlistaPersones;
 
 import java.util.ArrayList;
 import java.util.List;
