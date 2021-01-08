@@ -2,6 +2,8 @@
 
 package asix.m3.uf1;
 
+import java.util.Random;
+
 /**
  * Exemples d'ús de la funció Math.random()
  *
@@ -65,6 +67,12 @@ public class GenerarRandom {
             case 2:
                 System.out.println('s');
         }
+
+
+        //aleatoris no consecutius amb un array de valors
+        String []noms={"Jordi", "Joan", "Emma", "Maria", "Josep","Anna", "Isabel"};
+        String nomRandom=noms[new Random().nextInt(noms.length)];
+        System.out.println("Nom random "+nomRandom);
 
     }
 }
