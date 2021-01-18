@@ -64,8 +64,9 @@ public class Ex1BasicConsumer {
     }
 
     public static void funcioVersatil(Consumer<int[]> operacio, int []a){
-        operacio.accept(a);
-        System.out.println();
+        //exemple de com concatenar 2 consumer amb .andThen()
+        operacio.andThen(x-> System.out.println(x)).accept(a);
+        //System.out.println();
     }
 
     public static void funcioVersatil2(Consumer<List<Integer>> operacio, List<Integer> a){
