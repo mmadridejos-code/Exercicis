@@ -1,4 +1,4 @@
-package m9.uf1.criptografia.aes;
+package dam.m9.uf1.criptografia.aes;
 
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
