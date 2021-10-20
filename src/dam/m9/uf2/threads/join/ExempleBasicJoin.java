@@ -25,9 +25,7 @@ public class ExempleBasicJoin {
 //            System.out.println("El primer thread ha acabat la seva feina");
 //        }
         t2.start();
-
     }
-
     public static void comptar(int a, int b) {
         for (int i = a; i < b; i++)
             System.out.println("El thread " + Thread.currentThread().getName() + " compta " + i);

@@ -37,6 +37,8 @@ public class Menu implements Iterable<Plat>{
             System.out.println(it.next());
         }
 
+        System.out.println("--------------------------------------");
+
         /* Iterar AMB bucle for-each*/
         for(Plat p: m){
             System.out.println(p);

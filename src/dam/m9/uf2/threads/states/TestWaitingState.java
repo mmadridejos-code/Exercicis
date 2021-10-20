@@ -14,6 +14,7 @@ public class TestWaitingState {
         t2.start();
         try {
             t2.join(); //fa esperar t1 fins que acabi t2
+            System.out.println("t2 "+t2.getState());
         }catch(InterruptedException e){}
     }
 

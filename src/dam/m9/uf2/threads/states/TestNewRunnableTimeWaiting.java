@@ -11,7 +11,8 @@ public class TestNewRunnableTimeWaiting {
         //TIMED_WAITING sempre i quan t1 s'hagi d'esperar per alguna raó,
         //per exemple, amb un sleep llarg dintre del seu run
         System.out.println("t1 "+t1.getState()); //TIMED_WAITING
-        Thread.sleep(2000); //si espero suficient, t1 acaba segur: TERMINATED
+       // Thread.sleep(2000); //si espero suficient, t1 acaba segur: TERMINATED
+        t1.join();
         System.out.println(t1.getState());
     }
 

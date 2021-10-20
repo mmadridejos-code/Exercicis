@@ -18,5 +18,7 @@ public class Exemple4ExecutorsPeriodic {
         //posa en marxa l'alarma immediatament i després cada 5 segons.
         System.out.println("Comencem els beeps immediatament a les "+LocalTime.now());
         ScheduledFuture beeper = temporitzador.scheduleAtFixedRate(alarma, 0, 5, TimeUnit.SECONDS);
+
+       // temporitzador.shutdown();
     }
 }
