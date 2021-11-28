@@ -2,9 +2,11 @@ package dam.m9.uf2.threads.waitnotify.blockingqueue.numeros;
 
 import java.util.Random;
 import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class ProductorNumeros implements Runnable{
     private BlockingQueue<Integer> cua;
+    private ThreadLocalRandom random= ThreadLocalRandom.current();
 
     public ProductorNumeros(BlockingQueue<Integer> q) {
         this.cua = q;
@@ -12,11 +14,11 @@ public class ProductorNumeros implements Runnable{
 
     @Override
     public void run() {
-        Random r = new Random();
+
 
         try {
             while (true) {
-                cua.put(r.nextInt(100));
+                cua.put(random.nextInt(100));
             }
         } catch (InterruptedException ex) {
             ex.printStackTrace();
